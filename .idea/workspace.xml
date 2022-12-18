@@ -5,14 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="85b1c3fd-ff08-457c-a497-89b067d72d75" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/spooned/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/arthuro/cli/MainWidget.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/arthuro/cli/CLI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/arthuro/cli/CLIStrings.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/arthuro/logging/LogProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/arthuro/logging/LogProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/arthuro/logging/MainModifierProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/arthuro/logging/MainModifierProcessor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/arthuro/logging/SpoonParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/arthuro/logging/SpoonParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/arthuro/logging/TypeReferenceRenameProcessor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/arthuro/logging/TypeRenameProcessor.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/arthuro/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/arthuro/main/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,6 +25,7 @@
       <list>
         <option value="Record" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -53,8 +54,23 @@
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.arthuro.cli" />
     </key>
+    <key name="MoveMembersDialog.RECENTS_KEY">
+      <recent name="org.arthuro.cli.UpdateProductWidget" />
+      <recent name="org.arthuro.cli.DeleteProductWidget" />
+      <recent name="org.arthuro.cli.CreateProductWidget" />
+      <recent name="org.arthuro.cli.SearchProductWidget" />
+      <recent name="org.arthuro.cli.CreateUserWidget" />
+    </key>
   </component>
   <component name="RunManager">
+    <configuration name="LE DEBUG" type="Application" factoryName="Application" activateToolWindowBeforeRun="false">
+      <option name="MAIN_CLASS_NAME" value="org.arthuro.main.Main" />
+      <module name="tp-tracabilite-logicielle" />
+      <extension name="coverage" sample_coverage="false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -76,7 +92,7 @@
       <option name="presentableId" value="Default" />
       <updated>1671127967297</updated>
       <workItem from="1671127968683" duration="9767000" />
-      <workItem from="1671370969837" duration="1083000" />
+      <workItem from="1671370969837" duration="9515000" />
     </task>
     <servers />
   </component>
@@ -93,5 +109,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/tp_tracabilite_logicielle$LE_DEBUG.ic" NAME="LE DEBUG Coverage Results" MODIFIED="1671398026996" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true" />
   </component>
 </project>

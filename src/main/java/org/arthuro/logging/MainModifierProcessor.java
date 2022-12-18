@@ -12,7 +12,9 @@ public class MainModifierProcessor extends AbstractProcessor<CtMethod> {
         if(element.getSimpleName().equals("main")) {
             CtCodeSnippetStatement snippet = getFactory().Core().createCodeSnippetStatement();
 
-            snippet.setValue("org.arthuro.cli.CLI.userInterface()");
+            snippet.setValue("""
+                    org.arthuro.cli.MainWidget mainWidget = new org.arthuro.cli.MainWidget();
+                    mainWidget.execute()""");
             element.setBody(snippet);
         }
     }

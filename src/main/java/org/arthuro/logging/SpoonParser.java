@@ -12,17 +12,24 @@ import java.util.List;
 public class SpoonParser {
 
     public void parseApplicationWithSpoon() {
-        Launcher launcher = new Launcher();
-        LogProcessor logProcessor = new LogProcessor();
+        Launcher mainModifierLauncher = new Launcher();
         MainModifierProcessor mainModifierProcessor = new MainModifierProcessor();
 
-        launcher.addInputResource("./src/main/java/");
-        launcher.setSourceOutputDirectory("./spooned/src/main/java");
 
-        launcher.addProcessor(mainModifierProcessor);
-        launcher.addProcessor(logProcessor);
+        mainModifierLauncher.addInputResource("./src/main/java");
+        mainModifierLauncher.setSourceOutputDirectory("./spooned/src/main/java");
+        mainModifierLauncher.addProcessor(mainModifierProcessor);
 
-        launcher.run();
+        mainModifierLauncher.run();
+
+        Launcher logProcessorLauncher = new Launcher();
+        LogProcessor logProcessor = new LogProcessor();
+
+        logProcessorLauncher.addInputResource("./src/main/java/org/arthuro/app");
+        logProcessorLauncher.setSourceOutputDirectory("./spooned/src/main/java");
+        logProcessorLauncher.addProcessor(logProcessor);
+
+        logProcessorLauncher.run();
     }
 
     protected List<CtExecutable> getListOfExecutableFromModel(CtModel model) {
