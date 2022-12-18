@@ -2,29 +2,19 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>tp-tracabilite-logicielle</artifactId>
+        <groupId>org.arthuro</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.arthuro</groupId>
-    <artifactId>tp-tracabilite-logicielle</artifactId>
-    <packaging>pom</packaging>
-    <version>1.0-SNAPSHOT</version>
-    <modules>
-        <module>spooned</module>
-    </modules>
+    <artifactId>spooned</artifactId>
 
     <properties>
         <maven.compiler.source>19</maven.compiler.source>
         <maven.compiler.target>19</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-
-    <dependencies>
-        <!-- https://mvnrepository.com/artifact/fr.inria.gforge.spoon/spoon-core -->
-        <dependency>
-            <groupId>fr.inria.gforge.spoon</groupId>
-            <artifactId>spoon-core</artifactId>
-            <version>10.2.0</version>
-        </dependency>
-    </dependencies>
 
 </project>

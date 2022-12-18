@@ -14,14 +14,12 @@ public class SpoonParser {
     public void parseApplicationWithSpoon() {
         Launcher launcher = new Launcher();
         LogProcessor logProcessor = new LogProcessor();
-        TypeReferenceRenameProcessor typeReferenceRenameProcessor = new TypeReferenceRenameProcessor();
-        TypeRenameProcessor typeRenameProcessor = new TypeRenameProcessor();
+        MainModifierProcessor mainModifierProcessor = new MainModifierProcessor();
 
         launcher.addInputResource("./src/main/java/");
-        launcher.setSourceOutputDirectory("./spooned/src/");
+        launcher.setSourceOutputDirectory("./spooned/src/main/java");
 
-        //launcher.addProcessor(typeReferenceRenameProcessor);
-        //launcher.addProcessor(typeRenameProcessor);
+        launcher.addProcessor(mainModifierProcessor);
         launcher.addProcessor(logProcessor);
 
         launcher.run();

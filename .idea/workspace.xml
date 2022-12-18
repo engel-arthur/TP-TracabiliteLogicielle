@@ -5,11 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="85b1c3fd-ff08-457c-a497-89b067d72d75" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/arthuro/cli/CLI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/arthuro/cli/CLIOptions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/arthuro/cli/CLIStrings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spooned/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/arthuro/logging/SpoonParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/arthuro/logging/SpoonParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/arthuro/logging/TypeReferenceRenameProcessor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/arthuro/logging/TypeRenameProcessor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/arthuro/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/arthuro/main/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +24,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Record" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -41,7 +45,8 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false"
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "openjdk-19"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -71,6 +76,7 @@
       <option name="presentableId" value="Default" />
       <updated>1671127967297</updated>
       <workItem from="1671127968683" duration="9767000" />
+      <workItem from="1671370969837" duration="1083000" />
     </task>
     <servers />
   </component>
