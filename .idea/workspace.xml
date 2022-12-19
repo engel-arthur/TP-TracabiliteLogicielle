@@ -5,11 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="85b1c3fd-ff08-457c-a497-89b067d72d75" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/arthuro/cli/MainWidget.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/arthuro/cli/CLI.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/arthuro/cli/CLIStrings.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/arthuro/app/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/arthuro/app/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/arthuro/app/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/arthuro/app/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/arthuro/cli/CLIOptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/arthuro/cli/CLIOptions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/arthuro/cli/CLIWidget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/arthuro/cli/CLIWidget.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/arthuro/cli/CreateProductWidget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/arthuro/cli/CreateProductWidget.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/arthuro/cli/CreateUserWidget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/arthuro/cli/CreateUserWidget.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/arthuro/cli/DeleteProductWidget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/arthuro/cli/DeleteProductWidget.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/arthuro/cli/MainWidget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/arthuro/cli/MainWidget.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/arthuro/cli/SearchProductWidget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/arthuro/cli/SearchProductWidget.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/arthuro/cli/UpdateProductWidget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/arthuro/cli/UpdateProductWidget.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/arthuro/exception/InvalidExpirationDateException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/arthuro/exception/InvalidExpirationDateException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/arthuro/exception/InvalidPriceException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/arthuro/exception/InvalidPriceException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/arthuro/exception/ProductAlreadyExistsException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/arthuro/exception/ProductAlreadyExistsException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/arthuro/exception/ProductNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/arthuro/exception/ProductNotFoundException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/arthuro/logging/LogProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/arthuro/logging/LogProcessor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/arthuro/logging/MainModifierProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/arthuro/logging/MainModifierProcessor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/arthuro/logging/SpoonParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/arthuro/logging/SpoonParser.java" afterDir="false" />
@@ -36,20 +46,23 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2Ixf4RtJHvZL7duVVDE8SsLnqnc" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "openjdk-19"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-19&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.arthuro.cli" />
@@ -63,14 +76,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="LE DEBUG" type="Application" factoryName="Application" activateToolWindowBeforeRun="false">
-      <option name="MAIN_CLASS_NAME" value="org.arthuro.main.Main" />
-      <module name="tp-tracabilite-logicielle" />
-      <extension name="coverage" sample_coverage="false" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -93,6 +98,9 @@
       <updated>1671127967297</updated>
       <workItem from="1671127968683" duration="9767000" />
       <workItem from="1671370969837" duration="9515000" />
+      <workItem from="1671401608830" duration="204000" />
+      <workItem from="1671408720183" duration="500000" />
+      <workItem from="1671409281343" duration="2870000" />
     </task>
     <servers />
   </component>

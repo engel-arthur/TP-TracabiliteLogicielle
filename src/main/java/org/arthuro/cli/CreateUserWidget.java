@@ -2,13 +2,11 @@ package org.arthuro.cli;
 
 import org.arthuro.app.User;
 
-import java.nio.file.FileAlreadyExistsException;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import java.util.Scanner;
 
-public class CreateUserWidget extends CLIWidget{
+public class CreateUserWidget extends CLIWidget {
     List<User> users;
 
     public CreateUserWidget(Scanner userInputScanner, List<User> users) {

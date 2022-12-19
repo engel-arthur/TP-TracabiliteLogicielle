@@ -4,10 +4,9 @@ import org.arthuro.app.ProductRepository;
 import org.arthuro.exception.ProductNotFoundException;
 
 import java.util.HashMap;
-import java.util.Map;
 import java.util.Scanner;
 
-public class DeleteProductWidget extends CLIWidget{
+public class DeleteProductWidget extends CLIWidget {
 
     ProductRepository productRepository;
 

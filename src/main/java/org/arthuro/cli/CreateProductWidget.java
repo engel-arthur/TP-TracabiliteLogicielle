@@ -19,10 +19,10 @@ public class CreateProductWidget extends CLIWidget {
     public CreateProductWidget(Scanner userInputScanner, ProductRepository productRepository) {
         super(userInputScanner);
         prompts = new HashMap<>() {{
-            put("enterId","Entrez l'id du produit à ajouter :");
-            put("enterName","Entrez le nom du produit à ajouter : ");
-            put("enterPrice","Entrez le prix du produit à ajouter : ");
-            put("enterDate","Entrez la date d'expiration du produit (\"aaaa-mm-jj\") à ajouter : ");
+            put("enterId", "Entrez l'id du produit à ajouter :");
+            put("enterName", "Entrez le nom du produit à ajouter : ");
+            put("enterPrice", "Entrez le prix du produit à ajouter : ");
+            put("enterDate", "Entrez la date d'expiration du produit (\"aaaa-mm-jj\") à ajouter : ");
             put("confirmationText", "Produit créé !");
         }};
         this.productRepository = productRepository;

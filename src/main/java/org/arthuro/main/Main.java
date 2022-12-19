@@ -2,13 +2,6 @@ package org.arthuro.main;
 
 import org.apache.commons.io.FileUtils;
 import org.arthuro.cli.MainWidget;
-import org.arthuro.exception.InvalidExpirationDateException;
-import org.arthuro.exception.InvalidPriceException;
-import org.arthuro.exception.ProductAlreadyExistsException;
-import org.arthuro.exception.ProductNotFoundException;
-import org.arthuro.logging.SpoonParser;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import java.io.File;
 import java.io.IOException;

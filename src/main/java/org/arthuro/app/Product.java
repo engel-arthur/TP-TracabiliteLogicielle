@@ -30,10 +30,6 @@ public class Product {
         this.name = name;
     }
 
-    public int getPrice() {
-        return price;
-    }
-
     public void setPrice(int price) throws InvalidPriceException {
         if (price > 0)
             this.price = price;
@@ -41,25 +37,20 @@ public class Product {
             throw new InvalidPriceException("Invalid price! " + price + " should be superior to 0.");
     }
 
-    public LocalDate getExpirationDate() {
-        return expirationDate;
-    }
-
     public void setExpirationDate(LocalDate expirationDate) throws InvalidExpirationDateException {
         if (expirationDate.isAfter(LocalDate.now()))
             this.expirationDate = expirationDate;
         else
-            throw new InvalidExpirationDateException("Invalid date! " + expirationDate.toString()
+            throw new InvalidExpirationDateException("Invalid date! " + expirationDate
                     + " should be an ulterior date from today ( " + LocalDate.now() + " ).");
     }
 
     @Override
     public String toString() {
-        return "{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
+        return "{ " +
+                "name='" + name + '\'' +
                 ", price=" + price +
                 ", expirationDate=" + expirationDate +
-                "}\n";
+                " }\n";
     }
 }

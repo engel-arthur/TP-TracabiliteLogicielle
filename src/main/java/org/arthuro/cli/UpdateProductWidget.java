@@ -10,17 +10,17 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-public class UpdateProductWidget extends CLIWidget{
+public class UpdateProductWidget extends CLIWidget {
     ProductRepository productRepository;
 
     public UpdateProductWidget(Scanner userInputScanner, ProductRepository productRepository) {
         super(userInputScanner);
         prompts = new HashMap<>() {{
             put("enterId", "Entrez l'id du produit à mettre à jour : ");
-            put("productInfo","Voici le produit que vous voulez mettre à jour : ");
-            put("enterName","Entrez le nouveau nom du produit : ");
-            put("enterPrice","Entrez le nouveau prix du produit : ");
-            put("enterDate","Entrez la nouvelle date d'expiration du produit (\"aaaa-mm-jj\") : ");
+            put("productInfo", "Voici le produit que vous voulez mettre à jour : ");
+            put("enterName", "Entrez le nouveau nom du produit : ");
+            put("enterPrice", "Entrez le nouveau prix du produit : ");
+            put("enterDate", "Entrez la nouvelle date d'expiration du produit (\"aaaa-mm-jj\") : ");
             put("confirmationText", "Produit mis à jour !");
         }};
         this.productRepository = productRepository;

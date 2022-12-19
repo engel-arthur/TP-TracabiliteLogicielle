@@ -10,7 +10,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class ProductRepository {
-    private Map<Integer, Product> products;
+    private final Map<Integer, Product> products;
 
     public ProductRepository() {
         products = new HashMap<>();
@@ -47,6 +47,6 @@ public class ProductRepository {
 
     @Override
     public String toString() {
-        return products + "\n";
+        return products.toString();
     }
 }

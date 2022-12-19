@@ -5,13 +5,17 @@ import org.arthuro.app.User;
 
 import java.util.*;
 
+/**
+ * Widget principal, qui sert de "hub" permettant d'accéder à tous les autres.
+ * Il possède un ProductRepository et une liste de Users, qu'il fera passer aux widgets enfant
+ * Il fera également passer son scanner aux widgets enfants (il vaut mieux éviter d'en créer plusieurs).
+ * Il stocke les widgets accessible dans un attribut widgets dédié.
+ */
 public final class MainWidget extends CLIWidget {
-    private ProductRepository productRepository;
-    private List<User> users;
+    private final ProductRepository productRepository;
+    private final List<User> users;
 
-    private Map<CLIOptions, CLIWidget> widgets;
-
-    private final String promptSeparator = "\n================================\n";
+    private final Map<CLIOptions, CLIWidget> widgets;
 
     public MainWidget() {
         userInputScanner = new Scanner(System.in);
@@ -30,6 +34,7 @@ public final class MainWidget extends CLIWidget {
         users = new ArrayList<>();
         widgets = new HashMap<>() {{
             put(CLIOptions.createUser, new CreateUserWidget(userInputScanner, users));
+            put(CLIOptions.displayProducts, new DisplayProductsWidget(productRepository));
             put(CLIOptions.searchProductById, new SearchProductWidget(userInputScanner, productRepository));
             put(CLIOptions.createProduct, new CreateProductWidget(userInputScanner, productRepository));
             put(CLIOptions.deleteProductById, new DeleteProductWidget(userInputScanner, productRepository));
@@ -47,19 +52,14 @@ public final class MainWidget extends CLIWidget {
 
             userChoice = CLIOptionsValues[userInputScanner.nextInt()];
 
-            switch (userChoice) {
-                case displayProducts -> displayProducts();
-                case quit -> {}
-                default -> widgets.get(userChoice).execute();
+            if (userChoice != CLIOptions.quit) {
+                widgets.get(userChoice).execute();
             }
 
+            String promptSeparator = "\n================================\n";
             System.out.println(promptSeparator);
         } while (userChoice != CLIOptions.quit);
 
         userInputScanner.close();
-    }
-
-    private void displayProducts() {
-        System.out.println(productRepository);
     }
 }
