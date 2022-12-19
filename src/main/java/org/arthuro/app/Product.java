@@ -30,6 +30,10 @@ public class Product {
         this.name = name;
     }
 
+    public int getPrice() {
+        return price;
+    }
+
     public void setPrice(int price) throws InvalidPriceException {
         if (price > 0)
             this.price = price;

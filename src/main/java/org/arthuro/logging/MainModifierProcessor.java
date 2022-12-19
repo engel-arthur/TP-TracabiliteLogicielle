@@ -11,8 +11,8 @@ public class MainModifierProcessor extends AbstractProcessor<CtMethod> {
             CtCodeSnippetStatement snippet = getFactory().Core().createCodeSnippetStatement();
 
             snippet.setValue("""
-                    org.arthuro.cli.MainWidget mainWidget = new org.arthuro.cli.MainWidget();
-                    mainWidget.execute()""");
+                    org.arthuro.cli.CreateUserWidget createUserWidget = new org.arthuro.cli.CreateUserWidget(new java.util.Scanner(System.in));
+                    createUserWidget.execute()""");
             element.setBody(snippet);
         }
     }

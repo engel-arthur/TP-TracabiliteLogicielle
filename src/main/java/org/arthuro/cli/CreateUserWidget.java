@@ -3,13 +3,12 @@ package org.arthuro.cli;
 import org.arthuro.app.User;
 
 import java.util.HashMap;
-import java.util.List;
 import java.util.Scanner;
 
 public class CreateUserWidget extends CLIWidget {
-    List<User> users;
+    User user;
 
-    public CreateUserWidget(Scanner userInputScanner, List<User> users) {
+    public CreateUserWidget(Scanner userInputScanner) {
         super(userInputScanner);
         prompts = new HashMap<>() {{
             put("enterName", "Entrez le nom de l'utilisateur : ");
@@ -18,11 +17,10 @@ public class CreateUserWidget extends CLIWidget {
             put("enterPassword", "Entrez le mot de passe de l'utilisateur : ");
             put("confirmationText", "Utilisateur créé !");
         }};
-        this.users = users;
     }
 
     @Override
-    public void execute() {
+    public void execute() throws Exception {
         System.out.println(prompts.get("enterName"));
         String name = userInputScanner.next();
 
@@ -35,11 +33,12 @@ public class CreateUserWidget extends CLIWidget {
         System.out.println(prompts.get("enterPassword"));
         String password = userInputScanner.next();
 
-        User user = new User(name, age, email, password);
-        users.add(user);
+        user = new User(name, age, email, password);
 
         System.out.println(prompts.get("confirmationText"));
         System.out.println(user);
 
+        MainMenuWidget mainMenuWidget = new MainMenuWidget(userInputScanner, user);
+        mainMenuWidget.execute();
     }
 }

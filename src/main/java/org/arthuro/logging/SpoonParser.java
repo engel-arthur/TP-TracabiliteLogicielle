@@ -18,7 +18,7 @@ public class SpoonParser {
         Launcher logProcessorLauncher = new Launcher();
         LogProcessor logProcessor = new LogProcessor();
 
-        logProcessorLauncher.addInputResource("./src/main/java/org/arthuro/app");
+        logProcessorLauncher.addInputResource("./src/main/java/org/arthuro/cli");
         logProcessorLauncher.setSourceOutputDirectory("./spooned/src/main/java");
         logProcessorLauncher.addProcessor(logProcessor);
 

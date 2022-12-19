@@ -11,29 +11,27 @@ import java.util.*;
  * Il fera également passer son scanner aux widgets enfants (il vaut mieux éviter d'en créer plusieurs).
  * Il stocke les widgets accessible dans un attribut widgets dédié.
  */
-public final class MainWidget extends CLIWidget {
+public final class MainMenuWidget extends CLIWidget {
     private final ProductRepository productRepository;
-    private final List<User> users;
+    private final User user;
 
     private final Map<CLIOptions, CLIWidget> widgets;
 
-    public MainWidget() {
-        userInputScanner = new Scanner(System.in);
+    public MainMenuWidget(Scanner userInputScanner, User user) {
+        super(userInputScanner);
+        this.user = user;
         prompts = new HashMap<>() {{
             put("mainPrompt", """
                     Choissisez une option parmi celles de la liste (entrez le numéro correspondant et appuyez sur entrée)
-                    1. Créer un utilisateur
-                    2. Afficher tous les produits
-                    3. Rechercher un produit par son ID
-                    4. Ajouter un nouveau produit
-                    5. Supprimer un produit par son ID
-                    6. Mettre à jour un produit
+                    1. Afficher tous les produits
+                    2. Rechercher un produit par son ID
+                    3. Ajouter un nouveau produit
+                    4. Supprimer un produit par son ID
+                    5. Mettre à jour un produit
                     0. Quitter""");
         }};
         productRepository = new ProductRepository();
-        users = new ArrayList<>();
         widgets = new HashMap<>() {{
-            put(CLIOptions.createUser, new CreateUserWidget(userInputScanner, users));
             put(CLIOptions.displayProducts, new DisplayProductsWidget(productRepository));
             put(CLIOptions.searchProductById, new SearchProductWidget(userInputScanner, productRepository));
             put(CLIOptions.createProduct, new CreateProductWidget(userInputScanner, productRepository));
@@ -47,19 +45,28 @@ public final class MainWidget extends CLIWidget {
         CLIOptions[] CLIOptionsValues = CLIOptions.values();
 
         do {
+            userChoice = getUserChoice(CLIOptionsValues);
 
-            System.out.println(prompts.get("mainPrompt"));
-
-            userChoice = CLIOptionsValues[userInputScanner.nextInt()];
-
-            if (userChoice != CLIOptions.quit) {
-                widgets.get(userChoice).execute();
-            }
-
-            String promptSeparator = "\n================================\n";
-            System.out.println(promptSeparator);
+            handleUserChoice(userChoice);
         } while (userChoice != CLIOptions.quit);
 
         userInputScanner.close();
+    }
+
+    private void handleUserChoice(CLIOptions userChoice) throws Exception {
+        if (userChoice != CLIOptions.quit) {
+            widgets.get(userChoice).execute();
+        }
+
+        String promptSeparator = "\n================================\n";
+        System.out.println(promptSeparator);
+    }
+
+    private CLIOptions getUserChoice(CLIOptions[] CLIOptionsValues) {
+        CLIOptions userChoice;
+        System.out.println(prompts.get("mainPrompt"));
+
+        userChoice = CLIOptionsValues[userInputScanner.nextInt()];
+        return userChoice;
     }
 }

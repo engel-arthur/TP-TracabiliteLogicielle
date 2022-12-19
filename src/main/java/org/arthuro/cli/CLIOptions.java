@@ -8,7 +8,6 @@ package org.arthuro.cli;
 //TODO Enumération spécifique à un widget donné ?
 public enum CLIOptions {
     quit,
-    createUser,
     displayProducts,
     searchProductById,
     createProduct,
