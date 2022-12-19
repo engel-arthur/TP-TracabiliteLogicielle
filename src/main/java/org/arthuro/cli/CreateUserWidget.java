@@ -1,6 +1,8 @@
 package org.arthuro.cli;
 
+import org.arthuro.app.ProductRepository;
 import org.arthuro.app.User;
+import org.arthuro.main.Main;
 
 import java.util.HashMap;
 import java.util.Scanner;

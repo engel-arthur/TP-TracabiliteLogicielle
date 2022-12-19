@@ -1,8 +1,5 @@
 package org.arthuro.app;
 
-import org.arthuro.exception.InvalidExpirationDateException;
-import org.arthuro.exception.InvalidPriceException;
-
 import java.time.LocalDate;
 
 public class Product {
@@ -11,7 +8,7 @@ public class Product {
     private int price;
     private LocalDate expirationDate;
 
-    public Product(int id, String name, int price, LocalDate expirationDate) throws InvalidExpirationDateException, InvalidPriceException {
+    public Product(int id, String name, int price, LocalDate expirationDate) {
         this.id = id;
         this.name = name;
         setPrice(price);
@@ -34,25 +31,22 @@ public class Product {
         return price;
     }
 
-    public void setPrice(int price) throws InvalidPriceException {
+    public void setPrice(int price) {
         if (price > 0)
             this.price = price;
         else
-            throw new InvalidPriceException("Invalid price! " + price + " should be superior to 0.");
+            this.price = 1;
     }
 
-    public void setExpirationDate(LocalDate expirationDate) throws InvalidExpirationDateException {
-        if (expirationDate.isAfter(LocalDate.now()))
+    public void setExpirationDate(LocalDate expirationDate) {
             this.expirationDate = expirationDate;
-        else
-            throw new InvalidExpirationDateException("Invalid date! " + expirationDate
-                    + " should be an ulterior date from today ( " + LocalDate.now() + " ).");
     }
 
     @Override
     public String toString() {
         return "{ " +
-                "name='" + name + '\'' +
+                "id=" + id +
+                ", name='" + name + '\'' +
                 ", price=" + price +
                 ", expirationDate=" + expirationDate +
                 " }\n";

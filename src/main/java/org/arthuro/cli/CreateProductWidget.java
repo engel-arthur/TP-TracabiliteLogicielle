@@ -2,15 +2,10 @@ package org.arthuro.cli;
 
 import org.arthuro.app.Product;
 import org.arthuro.app.ProductRepository;
-import org.arthuro.app.User;
-import org.arthuro.exception.InvalidExpirationDateException;
-import org.arthuro.exception.InvalidPriceException;
 import org.arthuro.exception.ProductAlreadyExistsException;
 
 import java.time.LocalDate;
 import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 import java.util.Scanner;
 
 public class CreateProductWidget extends CLIWidget {
@@ -29,7 +24,7 @@ public class CreateProductWidget extends CLIWidget {
     }
 
     @Override
-    public void execute() throws ProductAlreadyExistsException, InvalidPriceException, InvalidExpirationDateException {
+    public void execute() throws ProductAlreadyExistsException {
 
         System.out.println(prompts.get("enterId"));
         int id = userInputScanner.nextInt();

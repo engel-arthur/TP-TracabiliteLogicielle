@@ -1,12 +1,7 @@
 package org.arthuro.logging;
 
-import org.eclipse.jdt.internal.codeassist.select.SelectionOnLambdaExpression;
 import spoon.processing.AbstractProcessor;
-import spoon.reflect.code.CtBlock;
 import spoon.reflect.code.CtCodeSnippetStatement;
-import spoon.reflect.code.CtDo;
-import spoon.reflect.code.CtStatement;
-import spoon.reflect.declaration.CtElement;
 import spoon.reflect.declaration.CtExecutable;
 
 public class LogProcessor extends AbstractProcessor<CtExecutable> {
@@ -17,6 +12,29 @@ public class LogProcessor extends AbstractProcessor<CtExecutable> {
         CtCodeSnippetStatement productPriceSnippet = getFactory().Core().createCodeSnippetStatement();
 
         // Snippet which contains the log.
+        initializeUserOperationsSnippet(element, userOperationsSnippet);
+
+        initializeProductPriceSnippet(element, productPriceSnippet);
+
+        // Inserts the userOperationsSnippet at the beginning of the method body.
+        if (element.getBody() != null && !element.getReference().isStatic()) {
+
+            insertSnippetAtEndOfMethod(element, "MainMenuWidget", "handleUserChoice", userOperationsSnippet);
+
+            insertSnippetAtEndOfMethod(element, "SearchProductWidget", "execute", productPriceSnippet);
+        }
+    }
+
+    private static void initializeProductPriceSnippet(CtExecutable element, CtCodeSnippetStatement productPriceSnippet) {
+        final String productPriceValue = String.format("""
+                org.slf4j.Logger logger = org.slf4j.LoggerFactory.getLogger(%s.class);
+                logger.info("\\"price\\" : " + product.getPrice())
+                """,
+                element.getReference().getDeclaringType().getSimpleName());
+        productPriceSnippet.setValue(productPriceValue);
+    }
+
+    private static void initializeUserOperationsSnippet(CtExecutable element, CtCodeSnippetStatement userOperationsSnippet) {
         final String userOperationValue = String.format("""
                         final String userInfoJSONFormat = "\\"user\\" : [" + user.getId() + ", \\"" + user.getName() + "\\", " +
                                         user.getAge() + ", \\"" + user.getEmail() + "\\"]," + " \\"op\\" :";
@@ -28,31 +46,14 @@ public class LogProcessor extends AbstractProcessor<CtExecutable> {
                         """,
                 element.getReference().getDeclaringType().getSimpleName());
         userOperationsSnippet.setValue(userOperationValue);
+    }
 
-        final String productPriceValue = String.format("""
-                org.slf4j.Logger logger = org.slf4j.LoggerFactory.getLogger(%s.class);   
-                logger.info("\\"price\\" : " + product.getPrice())
-                """,
-                element.getReference().getDeclaringType().getSimpleName());
-        productPriceSnippet.setValue(productPriceValue);
+    private static void insertSnippetAtEndOfMethod(CtExecutable element, String className, String methodName, CtCodeSnippetStatement snippet) {
+        if (element.getReference().getDeclaringType().getSimpleName().equals(className)) {
 
-        // Inserts the userOperationsSnippet at the beginning of the method body.
-        if (element.getBody() != null && !element.getReference().isStatic()) {
+            if (element.getReference().getDeclaration().getSimpleName().equals(methodName)) {
 
-            if (element.getReference().getDeclaringType().getSimpleName().equals("MainMenuWidget")) {
-
-                if (element.getReference().getDeclaration().getSimpleName().equals("handleUserChoice")) {
-
-                    element.getBody().insertEnd(userOperationsSnippet);
-                }
-            }
-
-            if (element.getReference().getDeclaringType().getSimpleName().equals("SearchProductWidget")) {
-
-                if (element.getReference().getDeclaration().getSimpleName().equals("execute")) {
-
-                    element.getBody().insertEnd(productPriceSnippet);
-                }
+                element.getBody().insertEnd(snippet);
             }
         }
     }

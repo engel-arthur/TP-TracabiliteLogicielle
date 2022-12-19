@@ -1,13 +1,10 @@
 package org.arthuro.cli;
 
 import org.arthuro.app.ProductRepository;
-import org.arthuro.exception.InvalidExpirationDateException;
-import org.arthuro.exception.InvalidPriceException;
 import org.arthuro.exception.ProductNotFoundException;
 
 import java.time.LocalDate;
 import java.util.HashMap;
-import java.util.Map;
 import java.util.Scanner;
 
 public class UpdateProductWidget extends CLIWidget {
@@ -27,7 +24,7 @@ public class UpdateProductWidget extends CLIWidget {
     }
 
     @Override
-    public void execute() throws ProductNotFoundException, InvalidPriceException, InvalidExpirationDateException {
+    public void execute() throws ProductNotFoundException {
 
         System.out.println(prompts.get("enterId"));
         int id = userInputScanner.nextInt();

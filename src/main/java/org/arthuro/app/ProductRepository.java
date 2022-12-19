@@ -1,7 +1,5 @@
 package org.arthuro.app;
 
-import org.arthuro.exception.InvalidExpirationDateException;
-import org.arthuro.exception.InvalidPriceException;
 import org.arthuro.exception.ProductAlreadyExistsException;
 import org.arthuro.exception.ProductNotFoundException;
 
@@ -38,7 +36,7 @@ public class ProductRepository {
     }
 
     public void updateProduct(int id, String newName, int newPrice, LocalDate newExpirationDate)
-            throws ProductNotFoundException, InvalidExpirationDateException, InvalidPriceException {
+            throws ProductNotFoundException {
         Product productToUpdate = getProductById(id);
         productToUpdate.setName(newName);
         productToUpdate.setPrice(newPrice);

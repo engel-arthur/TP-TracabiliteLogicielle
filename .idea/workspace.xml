@@ -6,14 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="85b1c3fd-ff08-457c-a497-89b067d72d75" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/arthuro/app/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/arthuro/app/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/arthuro/app/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/arthuro/app/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/arthuro/cli/CLIOptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/arthuro/cli/CLIOptions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/arthuro/app/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/arthuro/app/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/arthuro/cli/CreateProductWidget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/arthuro/cli/CreateProductWidget.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/arthuro/cli/CreateUserWidget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/arthuro/cli/CreateUserWidget.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/arthuro/cli/MainWidget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/arthuro/cli/MainMenuWidget.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/arthuro/cli/MainMenuWidget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/arthuro/cli/MainMenuWidget.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/arthuro/cli/UpdateProductWidget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/arthuro/cli/UpdateProductWidget.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/arthuro/exception/InvalidExpirationDateException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/arthuro/exception/InvalidPriceException.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/arthuro/logging/LogProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/arthuro/logging/LogProcessor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/arthuro/logging/MainModifierProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/arthuro/logging/MainModifierProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/arthuro/logging/SpoonParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/arthuro/logging/SpoonParser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/arthuro/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/arthuro/main/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,6 +31,7 @@
         <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="Tag Library Descriptor" />
       </list>
     </option>
   </component>
@@ -46,17 +50,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "dart.analysis.tool.window.visible": "false",
-    "jdk.selected.JAVA_MODULE": "openjdk-19",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-19&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.39885056&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.arthuro.cli" />
@@ -67,6 +75,11 @@
       <recent name="org.arthuro.cli.CreateProductWidget" />
       <recent name="org.arthuro.cli.SearchProductWidget" />
       <recent name="org.arthuro.cli.CreateUserWidget" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\artie\Documents\Cours\tp-tracabilite-logicielle\spooned" />
+      <recent name="C:\Users\artie\Documents\Cours\tp-tracabilite-logicielle\spooned\src\main\resources" />
+      <recent name="C:\Users\artie\Documents\Cours\tp-tracabilite-logicielle\spooned\target\classes" />
     </key>
   </component>
   <component name="RunManager">
@@ -95,6 +108,9 @@
       <workItem from="1671401608830" duration="204000" />
       <workItem from="1671408720183" duration="500000" />
       <workItem from="1671409281343" duration="2870000" />
+      <workItem from="1671463027629" duration="363000" />
+      <workItem from="1671463419422" duration="5906000" />
+      <workItem from="1671469362600" duration="1379000" />
     </task>
     <servers />
   </component>

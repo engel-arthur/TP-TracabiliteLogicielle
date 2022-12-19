@@ -12,7 +12,7 @@ import java.util.*;
  * Il stocke les widgets accessible dans un attribut widgets dédié.
  */
 public final class MainMenuWidget extends CLIWidget {
-    private final ProductRepository productRepository;
+    private ProductRepository productRepository;
     private final User user;
 
     private final Map<CLIOptions, CLIWidget> widgets;
