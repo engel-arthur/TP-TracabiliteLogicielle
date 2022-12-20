@@ -7,17 +7,10 @@
     <list default="true" id="85b1c3fd-ff08-457c-a497-89b067d72d75" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/arthuro/app/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/arthuro/app/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/arthuro/app/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/arthuro/app/ProductRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/arthuro/cli/CreateProductWidget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/arthuro/cli/CreateProductWidget.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/arthuro/cli/CreateUserWidget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/arthuro/cli/CreateUserWidget.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/arthuro/cli/MainMenuWidget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/arthuro/cli/MainMenuWidget.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/arthuro/cli/UpdateProductWidget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/arthuro/cli/UpdateProductWidget.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/arthuro/exception/InvalidExpirationDateException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/arthuro/exception/InvalidPriceException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spooned/execution_scenarios/user_michael_jordan" beforeDir="false" afterPath="$PROJECT_DIR$/spooned/execution_scenarios/user_michael_jordan.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/arthuro/logging/LogProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/arthuro/logging/LogProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/arthuro/logging/MainModifierProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/arthuro/logging/MainModifierProcessor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/arthuro/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/arthuro/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests.log" beforeDir="false" afterPath="$PROJECT_DIR$/tests.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,8 +23,8 @@
         <option value="Record" />
         <option value="Enum" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="Tag Library Descriptor" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -110,7 +103,8 @@
       <workItem from="1671409281343" duration="2870000" />
       <workItem from="1671463027629" duration="363000" />
       <workItem from="1671463419422" duration="5906000" />
-      <workItem from="1671469362600" duration="1379000" />
+      <workItem from="1671469362600" duration="1907000" />
+      <workItem from="1671547788610" duration="11412000" />
     </task>
     <servers />
   </component>

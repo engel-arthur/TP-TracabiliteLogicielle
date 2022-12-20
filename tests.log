@@ -1,41 +1,41 @@
-INFO  org.arthuro.cli.MainMenuWidget - "user" : [0, "Arthur", 22, "engel@domain.com"], "op" : "WRITE"
-INFO  org.arthuro.cli.MainMenuWidget - "user" : [0, "Arthur", 22, "engel@domain.com"], "op" : "WRITE"
-INFO  org.arthuro.cli.MainMenuWidget - "user" : [0, "Arthur", 22, "engel@domain.com"], "op" : "READ"
-INFO  org.arthuro.cli.MainMenuWidget - "user" : [0, "Arthur", 22, "engel@domain.com"], "op" : "READ"
-INFO  org.arthuro.cli.MainMenuWidget - "user" : [0, "Arthur", 22, "engel@domain.com"], "op" : "READ"
-INFO  org.arthuro.cli.MainMenuWidget - "user" : [0, "Arthur", 22, "engel@domain.com"], "op" : "READ"
-INFO  org.arthuro.cli.MainMenuWidget - "user" : [0, "Arthur", 22, "engel@domain.com"], "op" : "READ"
-INFO  o.arthuro.cli.SearchProductWidget - "price" : 5000000
-INFO  org.arthuro.cli.MainMenuWidget - "user" : [0, "Arthur", 22, "engel@domain.com"], "op" : "READ"
-INFO  org.arthuro.cli.MainMenuWidget - "user" : [0, "Arthur", 22, "engel@domain.com"], "op" : "WRITE"
-INFO  org.arthuro.cli.MainMenuWidget - "user" : [1, "Gaetan", 21, "romero@domain.com"], "op" : "WRITE"
-INFO  org.arthuro.cli.MainMenuWidget - "user" : [1, "Gaetan", 21, "romero@domain.com"], "op" : "WRITE"
-INFO  org.arthuro.cli.MainMenuWidget - "user" : [1, "Gaetan", 21, "romero@domain.com"], "op" : "WRITE"
-INFO  org.arthuro.cli.MainMenuWidget - "user" : [1, "Gaetan", 21, "romero@domain.com"], "op" : "WRITE"
-INFO  org.arthuro.cli.MainMenuWidget - "user" : [1, "Gaetan", 21, "romero@domain.com"], "op" : "WRITE"
-INFO  org.arthuro.cli.MainMenuWidget - "user" : [2, "Hamilgoat", 36, "hamilton@domain.com"], "op" : "WRITE"
-INFO  o.arthuro.cli.SearchProductWidget - "price" : 999999999
-INFO  org.arthuro.cli.MainMenuWidget - "user" : [2, "Hamilgoat", 36, "hamilton@domain.com"], "op" : "READ"
-INFO  o.arthuro.cli.SearchProductWidget - "price" : 999999999
-INFO  org.arthuro.cli.MainMenuWidget - "user" : [2, "Hamilgoat", 36, "hamilton@domain.com"], "op" : "READ"
-INFO  o.arthuro.cli.SearchProductWidget - "price" : 999999999
-INFO  org.arthuro.cli.MainMenuWidget - "user" : [2, "Hamilgoat", 36, "hamilton@domain.com"], "op" : "READ"
-INFO  o.arthuro.cli.SearchProductWidget - "price" : 999999999
-INFO  org.arthuro.cli.MainMenuWidget - "user" : [2, "Hamilgoat", 36, "hamilton@domain.com"], "op" : "READ"
-INFO  org.arthuro.cli.MainMenuWidget - "user" : [2, "Hamilgoat", 36, "hamilton@domain.com"], "op" : "WRITE"
-INFO  org.arthuro.cli.MainMenuWidget - "user" : [3, "Michael", 59, "mj@domain.com"], "op" : "WRITE"
-INFO  org.arthuro.cli.MainMenuWidget - "user" : [3, "Michael", 59, "mj@domain.com"], "op" : "WRITE"
-INFO  org.arthuro.cli.MainMenuWidget - "user" : [3, "Michael", 59, "mj@domain.com"], "op" : "WRITE"
-INFO  org.arthuro.cli.MainMenuWidget - "user" : [3, "Michael", 59, "mj@domain.com"], "op" : "WRITE"
-INFO  org.arthuro.cli.MainMenuWidget - "user" : [3, "Michael", 59, "mj@domain.com"], "op" : "READ"
-INFO  o.arthuro.cli.SearchProductWidget - "price" : 400
-INFO  org.arthuro.cli.MainMenuWidget - "user" : [3, "Michael", 59, "mj@domain.com"], "op" : "READ"
-INFO  org.arthuro.cli.MainMenuWidget - "user" : [4, "Will", 22, "smith@domain.com"], "op" : "WRITE"
-INFO  org.arthuro.cli.MainMenuWidget - "user" : [4, "Will", 22, "smith@domain.com"], "op" : "WRITE"
-INFO  org.arthuro.cli.MainMenuWidget - "user" : [4, "Will", 22, "smith@domain.com"], "op" : "READ"
-INFO  o.arthuro.cli.SearchProductWidget - "price" : 350000000
-INFO  org.arthuro.cli.MainMenuWidget - "user" : [4, "Will", 22, "smith@domain.com"], "op" : "READ"
-INFO  o.arthuro.cli.SearchProductWidget - "price" : 1000000
-INFO  org.arthuro.cli.MainMenuWidget - "user" : [4, "Will", 22, "smith@domain.com"], "op" : "READ"
-INFO  org.arthuro.cli.MainMenuWidget - "user" : [4, "Will", 22, "smith@domain.com"], "op" : "WRITE"
-INFO  org.arthuro.cli.MainMenuWidget - "user" : [4, "Will", 22, "smith@domain.com"], "op" : "WRITE"
+INFO  org.arthuro.cli.MainMenuWidget - {"user" : [0, "Arthur", 22, "engel@domain.com"], "op" : "WRITE"}
+INFO  org.arthuro.cli.MainMenuWidget - {"user" : [0, "Arthur", 22, "engel@domain.com"], "op" : "WRITE"}
+INFO  org.arthuro.cli.MainMenuWidget - {"user" : [0, "Arthur", 22, "engel@domain.com"], "op" : "READ"}
+INFO  org.arthuro.cli.MainMenuWidget - {"user" : [0, "Arthur", 22, "engel@domain.com"], "op" : "READ"}
+INFO  org.arthuro.cli.MainMenuWidget - {"user" : [0, "Arthur", 22, "engel@domain.com"], "op" : "READ"}
+INFO  org.arthuro.cli.MainMenuWidget - {"user" : [0, "Arthur", 22, "engel@domain.com"], "op" : "READ"}
+INFO  org.arthuro.cli.MainMenuWidget - {"user" : [0, "Arthur", 22, "engel@domain.com"], "op" : "READ"}
+INFO  org.arthuro.cli.MainMenuWidget - {"user" : [0, "Arthur", 22, "engel@domain.com"], "op" : "READ"}
+INFO  o.arthuro.cli.SearchProductWidget - {"price" : 5000000}
+INFO  org.arthuro.cli.MainMenuWidget - {"user" : [0, "Arthur", 22, "engel@domain.com"], "op" : "WRITE"}
+INFO  org.arthuro.cli.MainMenuWidget - {"user" : [1, "Gaetan", 21, "romero@domain.com"], "op" : "WRITE"}
+INFO  org.arthuro.cli.MainMenuWidget - {"user" : [1, "Gaetan", 21, "romero@domain.com"], "op" : "WRITE"}
+INFO  org.arthuro.cli.MainMenuWidget - {"user" : [1, "Gaetan", 21, "romero@domain.com"], "op" : "WRITE"}
+INFO  org.arthuro.cli.MainMenuWidget - {"user" : [1, "Gaetan", 21, "romero@domain.com"], "op" : "WRITE"}
+INFO  org.arthuro.cli.MainMenuWidget - {"user" : [1, "Gaetan", 21, "romero@domain.com"], "op" : "WRITE"}
+INFO  org.arthuro.cli.MainMenuWidget - {"user" : [2, "Hamilgoat", 36, "hamilton@domain.com"], "op" : "WRITE"}
+INFO  org.arthuro.cli.MainMenuWidget - {"user" : [2, "Hamilgoat", 36, "hamilton@domain.com"], "op" : "READ"}
+INFO  o.arthuro.cli.SearchProductWidget - {"price" : 999999999}
+INFO  org.arthuro.cli.MainMenuWidget - {"user" : [2, "Hamilgoat", 36, "hamilton@domain.com"], "op" : "READ"}
+INFO  o.arthuro.cli.SearchProductWidget - {"price" : 999999999}
+INFO  org.arthuro.cli.MainMenuWidget - {"user" : [2, "Hamilgoat", 36, "hamilton@domain.com"], "op" : "READ"}
+INFO  o.arthuro.cli.SearchProductWidget - {"price" : 999999999}
+INFO  org.arthuro.cli.MainMenuWidget - {"user" : [2, "Hamilgoat", 36, "hamilton@domain.com"], "op" : "READ"}
+INFO  o.arthuro.cli.SearchProductWidget - {"price" : 999999999}
+INFO  org.arthuro.cli.MainMenuWidget - {"user" : [2, "Hamilgoat", 36, "hamilton@domain.com"], "op" : "WRITE"}
+INFO  org.arthuro.cli.MainMenuWidget - {"user" : [3, "Michael", 59, "mj@domain.com"], "op" : "WRITE"}
+INFO  org.arthuro.cli.MainMenuWidget - {"user" : [3, "Michael", 59, "mj@domain.com"], "op" : "WRITE"}
+INFO  org.arthuro.cli.MainMenuWidget - {"user" : [3, "Michael", 59, "mj@domain.com"], "op" : "WRITE"}
+INFO  org.arthuro.cli.MainMenuWidget - {"user" : [3, "Michael", 59, "mj@domain.com"], "op" : "WRITE"}
+INFO  org.arthuro.cli.MainMenuWidget - {"user" : [3, "Michael", 59, "mj@domain.com"], "op" : "READ"}
+INFO  org.arthuro.cli.MainMenuWidget - {"user" : [3, "Michael", 59, "mj@domain.com"], "op" : "READ"}
+INFO  o.arthuro.cli.SearchProductWidget - {"price" : 400}
+INFO  org.arthuro.cli.MainMenuWidget - {"user" : [4, "Will", 22, "smith@domain.com"], "op" : "WRITE"}
+INFO  org.arthuro.cli.MainMenuWidget - {"user" : [4, "Will", 22, "smith@domain.com"], "op" : "WRITE"}
+INFO  org.arthuro.cli.MainMenuWidget - {"user" : [4, "Will", 22, "smith@domain.com"], "op" : "READ"}
+INFO  org.arthuro.cli.MainMenuWidget - {"user" : [4, "Will", 22, "smith@domain.com"], "op" : "READ"}
+INFO  o.arthuro.cli.SearchProductWidget - {"price" : 350000000}
+INFO  org.arthuro.cli.MainMenuWidget - {"user" : [4, "Will", 22, "smith@domain.com"], "op" : "READ"}
+INFO  o.arthuro.cli.SearchProductWidget - {"price" : 1000000}
+INFO  org.arthuro.cli.MainMenuWidget - {"user" : [4, "Will", 22, "smith@domain.com"], "op" : "WRITE"}
+INFO  org.arthuro.cli.MainMenuWidget - {"user" : [4, "Will", 22, "smith@domain.com"], "op" : "WRITE"}
