@@ -1,17 +1,12 @@
 package org.arthuro.main;
 
 import org.apache.commons.io.FileUtils;
-import org.arthuro.app.Product;
-import org.arthuro.app.ProductRepository;
-import org.arthuro.exception.ProductAlreadyExistsException;
 import org.arthuro.logging.LogParser;
-import org.arthuro.logging.SpoonParser;
 
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.time.LocalDate;
 
 public final class Main {
     public static void main(String[] args) throws Exception {
@@ -20,8 +15,9 @@ public final class Main {
         SpoonParser spoonParser = new SpoonParser();
         spoonParser.parseApplicationWithSpoon();*/
         Path logFilePath = Paths.get("./tests.log");
-        Path outputFilePath = Paths.get("./users.json");
-        LogParser logParser = new LogParser(logFilePath, outputFilePath);
+        Path outputUsersFilePath = Paths.get("./users.json");
+        Path outputProfilesFilePath = Paths.get("./profiles.json");
+        LogParser logParser = new LogParser(logFilePath, outputUsersFilePath, outputProfilesFilePath);
         logParser.parse();
     }
 
